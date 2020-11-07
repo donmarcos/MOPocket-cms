@@ -5,6 +5,7 @@ const nedb = require("nedb");
 const Cache = require("../../utils/cache");
 const BaseAdapter = require("./base");
 const { promisify } = require("../../utils/helpers");
+const logger          = require("../../utils/logger");
 
 class DiskAdapter extends BaseAdapter {
   constructor(pocket, config) {
